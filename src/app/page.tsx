@@ -2601,15 +2601,14 @@ export default function Home() {
             <img
               src={(isSticky || isMenuOpen) ? "/logo-duotone.png?v=2" : "/logo-white.png?v=3"}
               alt="El Molino Blanco Logo"
-              className="w-auto object-contain transition-all duration-500"
-              style={{
-                height: isSticky ? "60px" : "72px"
-              }}
+              className={`w-auto object-contain transition-all duration-500 ${
+                isSticky ? "h-12 sm:h-[60px]" : "h-14 sm:h-[72px]"
+              }`}
             />
           </a>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-10">
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={`font-sans text-[11px] font-bold uppercase tracking-[0.14em] transition-colors duration-550 ${
               (isSticky || isMenuOpen) ? "text-[#231912] hover:text-[#231912]/75" : "text-white/90 hover:text-white"
             }`}>
@@ -2920,18 +2919,18 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-2xl mx-auto px-6 text-center text-[#f5ecd5] flex flex-col items-center justify-center">
           
           {/* Live music badge */}
-          <div className="mb-4 inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-[9px] sm:text-[10px] font-bold font-sans tracking-widest text-[#d4b986] uppercase select-none animate-pulse-slow">
+          <div className="mb-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-[10px] sm:text-[11px] font-bold font-sans tracking-widest text-[#d4b986] uppercase select-none animate-pulse-slow">
             <span className="w-1.5 h-1.5 rounded-full bg-[#d4b986] animate-ping" />
             {translations[locale].heroLiveMusic}
           </div>
 
           {/* Elegant script logo matching the cursive style */}
-          <h2 className="font-script text-4xl sm:text-5xl lg:text-6xl text-white mb-2 drop-shadow-md select-none animate-float">
+          <h2 className="font-script text-5xl sm:text-6xl lg:text-7xl text-white mb-2 drop-shadow-md select-none animate-float">
             {translations[locale].heroTitle}
           </h2>
 
           {/* Cursive Tagline (thin and compact) */}
-          <p className="font-serif italic text-lg sm:text-xl md:text-2xl font-light text-stone-200/90 mb-8 drop-shadow-lg select-none animate-fade-in-up tracking-wide">
+          <p className="font-serif italic text-xl sm:text-2xl font-light text-stone-200/90 mb-8 drop-shadow-lg select-none animate-fade-in-up tracking-wide">
             {translations[locale].heroTagline}
           </p>
 
@@ -2941,19 +2940,19 @@ export default function Home() {
               href={bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 rounded-full border border-white/20 text-[10px] font-bold font-sans tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all"
+              className="px-6 py-2.5 rounded-full border border-white/20 text-[11px] font-bold font-sans tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all"
             >
               {translations[locale].navBookTable}
             </a>
             <a
               href="#menu"
-              className="px-6 py-2 rounded-full border border-white/20 text-[10px] font-bold font-sans tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all"
+              className="px-6 py-2.5 rounded-full border border-white/20 text-[11px] font-bold font-sans tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all"
             >
               {translations[locale].navMenu}
             </a>
             <a
               href="#contacts"
-              className="px-6 py-2 rounded-full border border-white/20 text-[10px] font-bold font-sans tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all"
+              className="px-6 py-2.5 rounded-full border border-white/20 text-[11px] font-bold font-sans tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all"
             >
               {translations[locale].navFindUs}
             </a>
@@ -3001,7 +3000,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-6xl mx-auto px-8 sm:px-12 pt-8 pb-8 sm:pt-0 sm:pb-0 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-10 lg:gap-16 items-center">
             
             {/* Text — left side */}
             <div className="flex flex-col gap-4 sm:gap-5 lg:gap-6 text-left">
@@ -3010,13 +3009,13 @@ export default function Home() {
                 {translations[locale].storyHeader}
               </span>
 
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#231912] tracking-tight leading-[1.1] uppercase">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#231912] tracking-tight leading-[1.1] uppercase">
                 {translations[locale].storyTitle}
               </h2>
 
               <div className="w-12 h-[1.5px] bg-[#8c7853]" />
 
-              <div className="flex flex-col gap-3 text-[#231912]/75 font-sans text-xs sm:text-sm font-light leading-relaxed max-w-md">
+              <div className="flex flex-col gap-3 text-[#231912]/75 font-sans text-sm sm:text-base font-light leading-relaxed max-w-lg">
                 <p>{translations[locale].storyParagraph1}</p>
                 <p>{translations[locale].storyParagraph2}</p>
                 <p>{translations[locale].storyParagraph3}</p>
@@ -3024,7 +3023,7 @@ export default function Home() {
 
               {/* Quote */}
               <div className="border-l-2 border-[#8c7853]/40 pl-4 sm:pl-5 py-1.5 sm:py-2">
-                <p className="font-serif text-sm sm:text-base italic text-[#231912]/85 leading-snug">
+                <p className="font-serif text-base sm:text-lg italic text-[#231912]/85 leading-snug">
                   &ldquo;{translations[locale].storyQuote}&rdquo;
                 </p>
                 <span className="font-sans text-[10px] font-bold tracking-[0.14em] text-[#231912]/40 uppercase mt-2 sm:mt-3 block">
@@ -3035,13 +3034,13 @@ export default function Home() {
             </div>
 
             {/* Photo — right side, clean and adaptive aspect ratio */}
-            <div className="relative w-full aspect-[16/9] sm:aspect-[3/2] lg:aspect-[4/5] rounded-2xl overflow-hidden">
+            <div className="relative w-[92%] mx-auto sm:w-full sm:mx-0 aspect-[3/4] sm:aspect-[4/3] md:aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
                 src="/photos/story_quixote.jpg"
                 alt="Don Quixote statue in the garden of El Molino Blanco with the windmill behind"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-[center_35%]"
               />
             </div>
 
@@ -3067,7 +3066,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <span className="font-serif text-sm sm:text-base font-bold text-[#f5ecd5] uppercase tracking-wider group-hover:text-[#d4b986] transition-colors duration-550">{translations[locale].pillarHonestTitle}</span>
-                <p className="font-sans text-[10px] sm:text-[11px] text-[#f5ecd5]/40 mt-1 sm:mt-2.5 leading-relaxed max-w-[200px] group-hover:text-[#f5ecd5]/60 transition-colors duration-550">
+                <p className="font-sans text-[11px] sm:text-xs text-[#f5ecd5]/40 mt-1 sm:mt-2.5 leading-relaxed max-w-[220px] group-hover:text-[#f5ecd5]/60 transition-colors duration-550">
                   {translations[locale].pillarHonestDesc}
                 </p>
               </div>
@@ -3082,7 +3081,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <span className="font-serif text-sm sm:text-base font-bold text-[#f5ecd5] uppercase tracking-wider group-hover:text-[#d4b986] transition-colors duration-550">{translations[locale].pillarMusicTitle}</span>
-                <p className="font-sans text-[10px] sm:text-[11px] text-[#f5ecd5]/40 mt-1 sm:mt-2.5 leading-relaxed max-w-[200px] group-hover:text-[#f5ecd5]/60 transition-colors duration-550">
+                <p className="font-sans text-[11px] sm:text-xs text-[#f5ecd5]/40 mt-1 sm:mt-2.5 leading-relaxed max-w-[220px] group-hover:text-[#f5ecd5]/60 transition-colors duration-550">
                   {translations[locale].pillarMusicDesc}
                 </p>
               </div>
@@ -3095,7 +3094,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <span className="font-serif text-sm sm:text-base font-bold text-[#f5ecd5] uppercase tracking-wider group-hover:text-[#d4b986] transition-colors duration-550">{translations[locale].pillarReturnTitle}</span>
-                <p className="font-sans text-[10px] sm:text-[11px] text-[#f5ecd5]/40 mt-1 sm:mt-2.5 leading-relaxed max-w-[200px] group-hover:text-[#f5ecd5]/60 transition-colors duration-550">
+                <p className="font-sans text-[11px] sm:text-xs text-[#f5ecd5]/40 mt-1 sm:mt-2.5 leading-relaxed max-w-[220px] group-hover:text-[#f5ecd5]/60 transition-colors duration-550">
                   {translations[locale].pillarReturnDesc}
                 </p>
               </div>
@@ -3153,10 +3152,10 @@ export default function Home() {
             <span className="font-sans text-[10px] sm:text-[11px] font-bold tracking-[0.14em] text-[#231912]/45 uppercase">
               {translations[locale].eventsHeader}
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#231912] tracking-tight leading-[1.1] uppercase">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#231912] tracking-tight leading-[1.1] uppercase">
               {translations[locale].eventsTitle}
             </h2>
-            <p className="font-sans text-[9px] sm:text-[10px] text-[#8c7853] font-bold tracking-widest uppercase mt-0.5">
+            <p className="font-sans text-[10px] sm:text-[11px] text-[#8c7853] font-bold tracking-widest uppercase mt-0.5">
               {translations[locale].eventsSubtitle}
             </p>
             <div className="w-12 h-[1px] bg-[#8c7853] mt-2" />
@@ -3167,10 +3166,10 @@ export default function Home() {
             
             {/* Col 1: About the Restaurant */}
             <div className="flex flex-col pb-6 md:pb-0 md:pr-6 lg:pr-8 text-left">
-              <span className="font-serif text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#8c7853] mb-3 block border-b border-[#231912]/10 pb-1.5">
+              <span className="font-serif text-xs sm:text-sm font-bold uppercase tracking-wider text-[#8c7853] mb-3 block border-b border-[#231912]/10 pb-1.5">
                 {translations[locale].eventsAboutTitle}
               </span>
-              <ul className="space-y-3 font-sans text-[11px] sm:text-xs text-[#231912]/80 leading-relaxed">
+              <ul className="space-y-3 font-sans text-xs sm:text-sm text-[#231912]/80 leading-relaxed">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#8c7853] mt-1 select-none">•</span>
                   <span>{translations[locale].eventsHoursOpen}</span>
@@ -3188,10 +3187,10 @@ export default function Home() {
 
             {/* Col 2: Perfect For */}
             <div className="flex flex-col py-6 md:py-0 md:px-6 lg:px-8 text-left">
-              <span className="font-serif text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#8c7853] mb-3 block border-b border-[#231912]/10 pb-1.5">
+              <span className="font-serif text-xs sm:text-sm font-bold uppercase tracking-wider text-[#8c7853] mb-3 block border-b border-[#231912]/10 pb-1.5">
                 {translations[locale].eventsPerfectForTitle}
               </span>
-              <ul className="space-y-3 font-sans text-[11px] sm:text-xs text-[#231912]/80">
+              <ul className="space-y-3 font-sans text-xs sm:text-sm text-[#231912]/80">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#8c7853] mt-1 select-none">•</span>
                   <span>{translations[locale].eventsPerfectRomantic}</span>
@@ -3217,10 +3216,10 @@ export default function Home() {
 
             {/* Col 3: Space & Capacity */}
             <div className="flex flex-col pt-6 md:pt-0 md:pl-6 lg:pl-8 text-left">
-              <span className="font-serif text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#8c7853] mb-3 block border-b border-[#231912]/10 pb-1.5">
+              <span className="font-serif text-xs sm:text-sm font-bold uppercase tracking-wider text-[#8c7853] mb-3 block border-b border-[#231912]/10 pb-1.5">
                 {translations[locale].eventsSpaceTitle}
               </span>
-              <ul className="space-y-3 font-sans text-[11px] sm:text-xs text-[#231912]/80 leading-relaxed">
+              <ul className="space-y-3 font-sans text-xs sm:text-sm text-[#231912]/80 leading-relaxed">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#8c7853] mt-1 select-none">•</span>
                   <span>{translations[locale].eventsSpaceInside}</span>
@@ -3301,7 +3300,7 @@ export default function Home() {
                   setActiveCategory(cat);
                   setSelectedAddOns([]);
                 }}
-                className={`flex-shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full font-sans text-[11px] font-bold tracking-wide transition-all duration-400 border ${
+                className={`flex-shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full font-sans text-xs font-bold tracking-wide transition-all duration-400 border ${
                   activeCategory === cat
                     ? "bg-[#231912] text-[#f5ecd5] border-[#231912]"
                     : "bg-transparent text-[#231912]/60 border-[#231912]/12 hover:border-[#231912]/30 hover:text-[#231912]"
@@ -3317,16 +3316,16 @@ export default function Home() {
             {MENU_ITEMS.filter((item) => item.category === activeCategory).map((item) => (
               <div key={item.id} className="flex flex-col gap-1 py-1 group cursor-default transition-all duration-300">
                 <div className="flex justify-between items-baseline gap-2">
-                  <span className="font-sans text-[11px] sm:text-xs font-bold text-[#231912]/85 tracking-wide group-hover:text-[#8c7853] transition-colors duration-300">
+                  <span className="font-sans text-[13px] sm:text-sm font-bold text-[#231912]/85 tracking-wide group-hover:text-[#8c7853] transition-colors duration-300">
                     {getMenuItemName(item, locale)}
                   </span>
                   <span className="flex-grow border-b border-dotted border-[#231912]/12 mx-2 align-baseline relative top-[-3px] group-hover:border-[#8c7853]/25 transition-colors duration-300" />
-                  <span className="font-serif text-[11px] sm:text-xs font-bold text-[#8c7853] whitespace-nowrap group-hover:text-[#231912] transition-colors duration-300">
+                  <span className="font-serif text-[13px] sm:text-sm font-bold text-[#8c7853] whitespace-nowrap group-hover:text-[#231912] transition-colors duration-300">
                     {typeof item.price === "number" ? `${item.price.toFixed(2)} €` : (locale === "en" ? "Market Price" : locale === "es" ? "Según mercado" : locale === "ru" ? "Рыночная цена" : locale === "de" ? "Tagespreis" : locale === "fr" ? "Prix du marché" : "Prezzo di mercato")}
                   </span>
                 </div>
                 {getMenuItemDescription(item, locale) && (
-                  <p className="font-sans text-[10px] sm:text-[11px] text-[#231912]/50 font-light leading-relaxed">
+                  <p className="font-sans text-xs sm:text-[13px] text-[#231912]/50 font-light leading-relaxed">
                     {getMenuItemDescription(item, locale)}
                   </p>
                 )}
@@ -3336,10 +3335,10 @@ export default function Home() {
 
           {/* Allergens Warning Block */}
           <div className="mt-12 pt-6 border-t border-[#231912]/8 text-left">
-            <p className="font-sans text-[10px] text-[#231912]/60 leading-relaxed uppercase tracking-wider font-semibold">
+            <p className="font-sans text-[11px] text-[#231912]/60 leading-relaxed uppercase tracking-wider font-semibold">
               {translations[locale].allergyNoticeTitle}
             </p>
-            <p className="font-sans text-[9px] text-[#231912]/40 leading-relaxed mt-1">
+            <p className="font-sans text-[10px] text-[#231912]/40 leading-relaxed mt-1">
               {translations[locale].allergyNoticeAllergens}
             </p>
           </div>
@@ -3404,7 +3403,7 @@ export default function Home() {
               <button
                 key={tab}
                 onClick={() => setActiveDrinkTab(tab)}
-                className={`flex-shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full font-sans text-[10px] sm:text-[11px] font-bold tracking-wide transition-all duration-400 border ${
+                className={`flex-shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full font-sans text-xs font-bold tracking-wide transition-all duration-400 border ${
                   activeDrinkTab === tab
                     ? "bg-[#231912] text-[#f5ecd5] border-[#231912]"
                     : "bg-transparent text-[#231912]/60 border-[#231912]/12 hover:border-[#231912]/30 hover:text-[#231912]"
@@ -3419,28 +3418,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
             {DRINKS_MENU.filter(cat => getDrinkTab(cat.categoryEn) === activeDrinkTab).map((cat, catIdx) => (
               <div key={cat.categoryEn} className="flex flex-col group/cat animate-fade-in">
-                <h3 className="font-serif italic text-base text-[#231912] border-b border-[#231912]/10 pb-1.5 mb-3 tracking-wide uppercase">
+                <h3 className="font-serif italic text-base sm:text-lg text-[#231912] border-b border-[#231912]/10 pb-1.5 mb-3 tracking-wide uppercase">
                   {getDrinkCategoryName(cat.categoryEn, locale)}
                 </h3>
                 <div className="flex flex-col gap-2.5">
                   {cat.items.map((item, itemIdx) => (
                     <div key={itemIdx} className="flex flex-col gap-0.5 group/item cursor-default transition-all duration-300">
                       <div className="flex justify-between items-baseline gap-2">
-                        <span className="font-sans text-[11px] sm:text-xs font-medium text-[#231912]/85 tracking-wide group-hover/item:text-[#8c7853] transition-colors duration-300">
+                        <span className="font-sans text-[13px] sm:text-sm font-medium text-[#231912]/85 tracking-wide group-hover/item:text-[#8c7853] transition-colors duration-300">
                           {getDrinkItemName(item, locale)}
                         </span>
                         <span className="flex-grow border-b border-dotted border-[#231912]/12 mx-2 align-baseline relative top-[-3px] group-hover/item:border-[#8c7853]/25 transition-colors duration-300" />
                         {item.volume && (
-                          <span className="font-sans text-[9px] text-[#231912]/40 mr-2 whitespace-nowrap group-hover/item:text-[#231912]/60 transition-colors duration-300">
+                          <span className="font-sans text-[10px] text-[#231912]/40 mr-2 whitespace-nowrap group-hover/item:text-[#231912]/60 transition-colors duration-300">
                             {item.volume}
                           </span>
                         )}
-                        <span className="font-serif text-[11px] sm:text-xs font-bold text-[#8c7853] whitespace-nowrap group-hover/item:text-[#231912] transition-colors duration-300">
+                        <span className="font-serif text-[13px] sm:text-sm font-bold text-[#8c7853] whitespace-nowrap group-hover/item:text-[#231912] transition-colors duration-300">
                           {item.price}
                         </span>
                       </div>
                       {getDrinkItemDescription(item, locale) && (
-                        <p className="font-sans text-[10px] text-[#231912]/50 font-light leading-relaxed">
+                        <p className="font-sans text-xs text-[#231912]/50 font-light leading-relaxed">
                           {getDrinkItemDescription(item, locale)}
                         </p>
                       )}
@@ -3501,7 +3500,7 @@ export default function Home() {
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#231912] tracking-tight leading-[1.1] uppercase">
               {translations[locale].galleryTitle}
             </h2>
-            <p className="font-sans text-[9px] sm:text-[10px] text-[#8c7853] font-bold tracking-widest uppercase mt-0.5">
+            <p className="font-sans text-[10px] sm:text-[11px] text-[#8c7853] font-bold tracking-widest uppercase mt-0.5">
               {translations[locale].gallerySubtitle}
             </p>
             <div className="w-12 h-[1.5px] bg-[#8c7853] mt-2" />
@@ -3609,9 +3608,9 @@ export default function Home() {
           </div>
 
           {/* Side-by-Side Adaptive Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 items-stretch">
             {/* Contacts Info Card (left on desktop, full-width on mobile) */}
-            <div className="lg:col-span-2 flex flex-col justify-between gap-6 border border-[#231912]/10 rounded-3xl p-5 sm:p-6 md:p-8 bg-[#231912]/[0.02]">
+            <div className="md:col-span-2 flex flex-col justify-between gap-6 border border-[#231912]/10 rounded-3xl p-5 sm:p-6 md:p-8 bg-[#231912]/[0.02]">
               {/* Address */}
               <div className="flex flex-col gap-1 text-left">
                 <span className="font-serif text-xs font-bold uppercase tracking-wider text-[#8c7853]">{translations[locale].addressTitle}</span>
@@ -3619,7 +3618,7 @@ export default function Home() {
                   href="https://maps.app.goo.gl/22P5bSoH9xeFEYN56?g_st=ic" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-sans text-xs sm:text-sm text-[#231912]/85 leading-relaxed hover:text-[#8c7853] transition-colors"
+                  className="font-sans text-sm sm:text-base text-[#231912]/85 leading-relaxed hover:text-[#8c7853] transition-colors"
                 >
                   Av. Austria, 5, 38660 Costa Adeje<br />{"Santa Cruz de Tenerife, " + (locale === "en" ? "Spain" : locale === "es" ? "España" : locale === "ru" ? "Испания" : locale === "de" ? "Spanien" : locale === "fr" ? "Espagne" : "Spagna")}
                 </a>
@@ -3628,10 +3627,10 @@ export default function Home() {
               {/* Hours */}
               <div className="flex flex-col gap-1 text-left">
                 <span className="font-serif text-xs font-bold uppercase tracking-wider text-[#8c7853]">{translations[locale].hoursTitle}</span>
-                <p className="font-sans text-xs sm:text-sm text-[#231912]/85 leading-relaxed">
+                <p className="font-sans text-sm sm:text-base text-[#231912]/85 leading-relaxed">
                   {translations[locale].hoursDesc}
                 </p>
-                <span className="font-sans text-[9px] text-[#231912]/40 font-medium">{translations[locale].hoursKitchenNote}</span>
+                <span className="font-sans text-[10px] text-[#231912]/40 font-medium">{translations[locale].hoursKitchenNote}</span>
                 <div className="mt-1 flex items-center gap-1.5 text-[10px] font-bold text-[#8c7853] uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#8c7853] animate-pulse" />
                   {translations[locale].helloLiveMusicBadge}
@@ -3642,7 +3641,7 @@ export default function Home() {
               <div className="flex flex-col gap-3 text-left">
                 <div>
                   <span className="font-serif text-xs font-bold uppercase tracking-wider text-[#8c7853]">{translations[locale].phoneTitle}</span>
-                  <p className="font-sans text-xs sm:text-sm text-[#231912]/85 mt-0.5">
+                  <p className="font-sans text-sm sm:text-base text-[#231912]/85 mt-0.5">
                     <a href="tel:+34620770072" className="hover:text-[#8c7853] transition-all duration-300">+34 620 770 072</a>
                   </p>
                 </div>
@@ -3650,7 +3649,7 @@ export default function Home() {
                   href={bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#231912] text-[#f5ecd5] font-sans text-[9px] sm:text-[10px] font-bold uppercase tracking-wider hover:bg-[#8c7853] transition-all duration-300 self-start"
+                  className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#231912] text-[#f5ecd5] font-sans text-[10px] sm:text-[11px] font-bold uppercase tracking-wider hover:bg-[#8c7853] transition-all duration-300 self-start"
                 >
                   {translations[locale].bookYourSeat}
                 </a>
@@ -3658,7 +3657,7 @@ export default function Home() {
             </div>
 
             {/* Google Map Panel (right on desktop, full-width on mobile) */}
-            <div className="lg:col-span-3 relative h-[200px] sm:h-[280px] lg:h-auto min-h-[200px] rounded-3xl overflow-hidden border border-[#231912]/10 group animate-fade-in">
+            <div className="md:col-span-3 relative h-[260px] sm:h-[320px] md:h-auto min-h-[260px] rounded-3xl overflow-hidden border border-[#231912]/10 group animate-fade-in">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.2515655913244!2d-16.7291153!3d28.0778684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a975ecaa496e7%3A0xaaeaf88b0766c71f!2sEl%20Molino%20Blanco!5e0!3m2!1sru!2s!4v1780164446039!5m2!1sru!2s" 
                 width="100%" 
@@ -3708,7 +3707,7 @@ export default function Home() {
           </div>
 
           {/* Right Side: Copyright & Location on one line */}
-          <div className="flex items-center gap-2 text-xs font-sans">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-sans text-center">
             <span className="text-[#f5ecd5]/50">
               {translations[locale].footerCopyright}
             </span>
@@ -3943,7 +3942,7 @@ export default function Home() {
                       placeholder={locale === "en" ? "e.g. Elizabeth Bennett" : locale === "es" ? "ej. Elizabeth Bennett" : locale === "ru" ? "например, Елизавета Беннет" : locale === "de" ? "z. B. Elizabeth Bennett" : locale === "fr" ? "par exemple, Elizabeth Bennett" : "es. Elizabeth Bennett"}
                       value={reservationName}
                       onChange={(e) => setReservationName(e.target.value)}
-                      className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-sm font-medium"
+                      className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-base font-medium"
                     />
                   </div>
 
@@ -3955,7 +3954,7 @@ export default function Home() {
                         required
                         value={reservationDate}
                         onChange={(e) => setReservationDate(e.target.value)}
-                        className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-sm font-medium"
+                        className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-base font-medium"
                       />
                     </div>
                     <div className="flex flex-col space-y-1.5">
@@ -3965,7 +3964,7 @@ export default function Home() {
                         required
                         value={reservationTime}
                         onChange={(e) => setReservationTime(e.target.value)}
-                        className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-sm font-medium"
+                        className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-base font-medium"
                       />
                     </div>
                   </div>
@@ -3975,7 +3974,7 @@ export default function Home() {
                     <select
                       value={reservationGuests}
                       onChange={(e) => setReservationGuests(e.target.value)}
-                      className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-sm font-medium appearance-none"
+                      className="w-full px-5 py-3 rounded-xl border border-[#231912]/10 bg-white text-[#231912] focus:outline-none focus:border-[#231912]/40 text-base font-medium appearance-none"
                     >
                       <option value="1">{translations[locale].reserveGuestsSingle}</option>
                       <option value="2">2 {translations[locale].reserveGuestsMultiple}</option>
