@@ -2418,7 +2418,7 @@ export default function Home() {
   // Mobile Burger Menu State
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Sticky navbar state
+ 
   const [isSticky, setIsSticky] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [activeGalleryIndex, setActiveGalleryIndex] = useState<number | null>(null);
@@ -2432,7 +2432,7 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Keyboard navigation for lightbox
+  
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (activeGalleryIndex === null) return;
