@@ -908,6 +908,11 @@ const translations: Record<string, Record<string, string>> = {
     heroLiveMusic: "Live Music Every Night",
     heroTitle: "El Molino Blanco",
     heroTagline: "Cuisine that makes you want to return tomorrow",
+    navContactUs: "Contact Us",
+    cookieTitle: "Cookies",
+    cookieText: "We use cookies to keep the site running smoothly and to remember your preferences, such as your chosen language. You may accept them all or keep only the essential ones.",
+    cookieAccept: "Accept All",
+    cookieEssential: "Essential Only",
     storyHeader: "01 / Our Story",
     storyTitle: "A place with a soul and a story",
     storyParagraph1: "EL MOLINO BLANCO is a place with a soul and a story, where time slows down and every evening carries a sense of occasion.",
@@ -1017,6 +1022,11 @@ const translations: Record<string, Record<string, string>> = {
     heroLiveMusic: "Música en Vivo Todas las Noches",
     heroTitle: "El Molino Blanco",
     heroTagline: "Cocina que te hace querer volver mañana",
+    navContactUs: "Contáctanos",
+    cookieTitle: "Cookies",
+    cookieText: "Utilizamos cookies para que el sitio funcione correctamente y para recordar tus preferencias, como el idioma elegido. Puedes aceptarlas todas o mantener solo las esenciales.",
+    cookieAccept: "Aceptar Todo",
+    cookieEssential: "Solo Esenciales",
     storyHeader: "01 / Nuestra Historia",
     storyTitle: "Un lugar con alma e historia",
     storyParagraph1: "EL MOLINO BLANCO es un lugar con alma e historia, donde el tiempo se ralentiza y cada velada adquiere un sentido especial.",
@@ -1126,6 +1136,11 @@ const translations: Record<string, Record<string, string>> = {
     heroLiveMusic: "Живая музыка каждый вечер",
     heroTitle: "El Molino Blanco",
     heroTagline: "Кухня, к которой хочется вернуться завтра",
+    navContactUs: "Связаться",
+    cookieTitle: "Файлы cookie",
+    cookieText: "Мы используем файлы cookie, чтобы сайт работал корректно и запоминал ваши настройки, например выбранный язык. Вы можете принять все или оставить только необходимые.",
+    cookieAccept: "Принять все",
+    cookieEssential: "Только необходимые",
     storyHeader: "01 / Наша история",
     storyTitle: "Место с душой и историей",
     storyParagraph1: "EL MOLINO BLANCO — это место с душой и историей, где время замедляется, а каждый вечер наполнен ощущением важности.",
@@ -1235,6 +1250,11 @@ const translations: Record<string, Record<string, string>> = {
     heroLiveMusic: "Jeden Abend Live-Musik",
     heroTitle: "El Molino Blanco",
     heroTagline: "Eine Küche, die Lust darauf macht, morgen wiederzukommen",
+    navContactUs: "Kontakt",
+    cookieTitle: "Cookies",
+    cookieText: "Wir verwenden Cookies, damit die Website einwandfrei funktioniert und Ihre Einstellungen wie die gewählte Sprache gespeichert werden. Sie können alle akzeptieren oder nur die notwendigen behalten.",
+    cookieAccept: "Alle akzeptieren",
+    cookieEssential: "Nur notwendige",
     storyHeader: "01 / Unsere Geschichte",
     storyTitle: "Ein Ort mit einer Seele und einer Geschichte",
     storyParagraph1: "EL MOLINO BLANCO ist ein Ort mit einer Seele und einer Geschichte, an dem die Zeit vergeht und jeder Abend ein besonderes Erlebnis mit sich bringt.",
@@ -1344,6 +1364,11 @@ const translations: Record<string, Record<string, string>> = {
     heroLiveMusic: "Musique live tous les soirs",
     heroTitle: "El Molino Blanco",
     heroTagline: "Une cuisine qui donne envie de revenir demain",
+    navContactUs: "Contactez-nous",
+    cookieTitle: "Cookies",
+    cookieText: "Nous utilisons des cookies pour assurer le bon fonctionnement du site et mémoriser vos préférences, comme la langue choisie. Vous pouvez tout accepter ou ne garder que les cookies essentiels.",
+    cookieAccept: "Tout accepter",
+    cookieEssential: "Essentiels uniquement",
     storyHeader: "01 / Notre histoire",
     storyTitle: "Un lieu avec une âme et une histoire",
     storyParagraph1: "EL MOLINO BLANCO est un lieu avec une âme et une histoire, où le temps ralentit et où chaque soirée est empreinte d'un sentiment d'occasion.",
@@ -1453,6 +1478,11 @@ const translations: Record<string, Record<string, string>> = {
     heroLiveMusic: "Musica dal vivo ogni sera",
     heroTitle: "El Molino Blanco",
     heroTagline: "Una cucina che ti fa venir voglia di ritornare domani",
+    navContactUs: "Contattaci",
+    cookieTitle: "Cookie",
+    cookieText: "Utilizziamo i cookie per garantire il corretto funzionamento del sito e ricordare le tue preferenze, come la lingua scelta. Puoi accettarli tutti o mantenere solo quelli essenziali.",
+    cookieAccept: "Accetta tutto",
+    cookieEssential: "Solo essenziali",
     storyHeader: "01 / La nostra storia",
     storyTitle: "Un luogo con un'anima e una storia",
     storyParagraph1: "EL MOLINO BLANCO è un luogo con un'anima e una storia, dove il tempo rallenta e ogni sera porta con sé il senso dell'occasione.",
@@ -2385,6 +2415,10 @@ const GALLERY_ITEMS = [
 
 const bookingUrl = "https://www.google.com/maps/reserve/v/dine/c/zxYwb6CV1Ys?source=pa&opi=79508299&hl=en&gei=WCgbao_LEuyZ1fIPmsKasQo&ahbb=1&sourceurl=https://www.google.com/maps/preview/place?authuser%3D0%26hl%3Den%26pb%3D!1m14!1s0xc6a975ecaa496e7:0xaaeaf88b0766c71f!3m12!1m3!1d11990.25596208906!2d69.2758336!3d41.2965909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!12m4!2m3!1i360!2i120!4i8!13m65!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m33!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!1m3!1e9!2b1!3e2!2b1!9b0!15m16!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!14m3!1sPicbaoiBGOqRwPAPvo38cA!7e81!15i10112!15m132!1m28!13m9!2b1!3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m17!3b1!4b1!5b1!6b1!9b1!13b1!14b1!17b1!20b1!21b1!22b1!30b1!32b1!33m1!1b1!34b1!36e2!10m1!8e3!11m2!3e1!3e1!17b1!20m4!1e3!1e6!1e3!1e6!24b1!25b1!26b1!27b1!29b1!30m1!2b1!36b1!37b1!39m3!2m2!2i1!3i1!43b1!52b1!55b1!56m1!1b1!61m4!1m1!1e1!1m1!1e1!65m9!3m8!1m3!1m2!1i224!2i298!1m3!1m2!1i224!2i298!72m35!1m10!2b1!5b1!7b1!12m6!1b1!2b1!4m1!1e1!4m1!1e1!4b1!8m10!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_google_review_posts__and__hotel_and_vr_partner_review_posts!6m1!1e1!8m10!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_google_review_posts__and__hotel_and_vr_partner_review_posts!6m1!1e1!9b1!89b1!90m4!1m1!1e2!1m1!1e2!98m3!1b1!2b1!3b1!103b1!113b1!114m3!1b1!2m1!1b1!117b1!122m1!1b1!126b1!127b1!128m1!1b0!21m28!1m6!1m2!1e3!2b1!9b1!34m5!7b1!10b1!14b1!15m1!1b0!37i780!39sEl%2BMolino%2BBlanco%26q%3DEl%2BMolino%2BBlanco,%2BAv.%2BAustria,%2B5,%2B38660%2BCosta%2BAdeje,%2BSanta%2BCruz%2Bde%2BTenerife";
 
+const whatsappUrl = "https://wa.me/34620770072";
+
+const COOKIE_CONSENT_KEY = "emb-cookie-consent";
+
 const languages = [
     { code: "en", label: "EN" },
     { code: "es", label: "ES" },
@@ -2422,6 +2456,7 @@ export default function Home() {
   const [isSticky, setIsSticky] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [activeGalleryIndex, setActiveGalleryIndex] = useState<number | null>(null);
+  const [showCookieBanner, setShowCookieBanner] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -2472,6 +2507,29 @@ export default function Home() {
       document.body.style.overflow = "";
     }
   }, [isLoading]);
+
+  // Cookie consent — reveal once the intro loader has cleared
+  useEffect(() => {
+    let stored: string | null = null;
+    try {
+      stored = window.localStorage.getItem(COOKIE_CONSENT_KEY);
+    } catch {
+      stored = null;
+    }
+    if (stored) return;
+
+    const timer = setTimeout(() => setShowCookieBanner(true), 3200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleCookieChoice = (choice: "all" | "essential") => {
+    try {
+      window.localStorage.setItem(COOKIE_CONSENT_KEY, choice);
+    } catch {
+      // Storage unavailable (private mode) — the banner simply reappears next visit
+    }
+    setShowCookieBanner(false);
+  };
 
 
 
@@ -2958,13 +3016,61 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Mouse Scroll indicator with warm luxury tones */}
+          {/* Golden WhatsApp contact button */}
+          <div className="mt-3.5 animate-fade-in-up select-none">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp +34 620 77 00 72"
+              className="group inline-flex items-center gap-2.5 px-7 py-2.5 rounded-full border border-[#d4b986]/70 bg-gradient-to-r from-[#e0c795] via-[#d4b986] to-[#b99a63] text-[#231912] text-[11px] font-bold font-sans tracking-widest uppercase shadow-[0_8px_28px_-10px_rgba(212,185,134,0.85)] hover:from-[#eed9ae] hover:via-[#e0c795] hover:to-[#c9a874] hover:shadow-[0_10px_34px_-8px_rgba(212,185,134,0.95)] hover:scale-[1.03] transition-all duration-300"
+            >
+              <svg className="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413" />
+              </svg>
+              {translations[locale].navContactUs}
+            </a>
+          </div>
+
+          {/* Scroll indicator — mouse wheel on desktop, swipe hand on touch */}
           <div className="flex flex-col items-center gap-2 animate-bounce mt-16 select-none">
             <span className="font-serif text-[9px] uppercase tracking-[0.2em] text-[#f5ecd5]/40">
               Scroll
             </span>
-            <div className="w-5 h-9 rounded-full border border-[#f5ecd5]/25 flex justify-center p-1.5">
+
+            {/* Desktop — mouse with travelling wheel dot */}
+            <div className="hidden sm:flex w-5 h-9 rounded-full border border-[#f5ecd5]/25 justify-center p-1.5">
               <div className="w-1 h-2.5 rounded-full bg-[#d4b986] animate-pulse-slow" />
+            </div>
+
+            {/* Mobile — hand with pointing finger, swipe motion above the fingertip */}
+            <div className="sm:hidden relative flex items-end justify-center w-8 h-9">
+              <svg
+                className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-2.5 text-[#d4b986] animate-pulse-slow"
+                viewBox="0 0 16 10"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                aria-hidden="true"
+              >
+                <path d="M8 1v7" />
+                <path d="M4.5 4.5 8 1l3.5 3.5" />
+              </svg>
+              <svg
+                className="w-7 h-7 text-[#f5ecd5]/60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M10 12V5a1.6 1.6 0 0 1 3.2 0v6" />
+                <path d="M13.2 11.2a1.5 1.5 0 0 1 3 0V13" />
+                <path d="M16.2 12a1.5 1.5 0 0 1 3 0v3.4a5.6 5.6 0 0 1-5.6 5.6h-1.3a4.8 4.8 0 0 1-3.5-1.5l-3.1-3.3a1.55 1.55 0 0 1 2.2-2.2L10 16.4" />
+              </svg>
             </div>
           </div>
 
@@ -4072,6 +4178,69 @@ export default function Home() {
             <span className="font-serif text-[11px] uppercase tracking-[0.2em] text-[#d4b986] mt-5">
               {activeGalleryIndex + 1} / {GALLERY_ITEMS.length}
             </span>
+          </div>
+        </div>
+      )}
+
+      {/* 10. COOKIE CONSENT */}
+      {showCookieBanner && (
+        <div
+          role="dialog"
+          aria-live="polite"
+          aria-label={translations[locale].cookieTitle}
+          className="fixed inset-x-0 bottom-0 z-[9000] px-4 pb-4 sm:px-6 sm:pb-6 pointer-events-none"
+        >
+          <div className="relative mx-auto w-full max-w-3xl pointer-events-auto rounded-2xl sm:rounded-3xl border border-[#231912]/12 bg-[#f5ecd5]/95 backdrop-blur-md shadow-[0_20px_55px_-15px_rgba(35,25,18,0.5)] px-5 py-5 sm:px-8 sm:py-6 animate-slide-up-fade">
+
+            {/* Corner ornaments matching the house style */}
+            <svg className="absolute top-2.5 left-2.5 w-5 h-5 text-[#8c7853]/45 pointer-events-none" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.2">
+              <path d="M0 40V0H40" />
+              <path d="M6 40V6H40" strokeDasharray="2 2" strokeWidth="0.8" />
+            </svg>
+            <svg className="absolute bottom-2.5 right-2.5 w-5 h-5 text-[#8c7853]/45 rotate-180 pointer-events-none" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.2">
+              <path d="M0 40V0H40" />
+              <path d="M6 40V6H40" strokeDasharray="2 2" strokeWidth="0.8" />
+            </svg>
+
+            <div className="relative flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-7">
+
+              <div className="flex items-start gap-4 flex-1">
+                <span className="shrink-0 w-11 h-11 rounded-full border border-[#8c7853]/30 bg-[#8c7853]/5 flex items-center justify-center text-[#8c7853]">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12.5 3.05A9 9 0 1 0 20.95 11.5a3.5 3.5 0 0 1-4.45-4.45 3.5 3.5 0 0 1-4-4Z" />
+                    <circle cx="9" cy="10" r="1" fill="currentColor" stroke="none" />
+                    <circle cx="14.6" cy="14.4" r="1" fill="currentColor" stroke="none" />
+                    <circle cx="9.4" cy="15.4" r="0.85" fill="currentColor" stroke="none" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 className="font-serif text-lg sm:text-xl text-[#231912] tracking-wide">
+                    {translations[locale].cookieTitle}
+                  </h3>
+                  <p className="font-sans text-[11px] sm:text-xs text-[#231912]/60 leading-relaxed mt-1.5 max-w-xl">
+                    {translations[locale].cookieText}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-2.5 shrink-0 sm:flex-col lg:flex-row">
+                <button
+                  type="button"
+                  onClick={() => handleCookieChoice("essential")}
+                  className="flex-1 sm:flex-none px-5 py-2.5 rounded-full border border-[#231912]/20 text-[10px] font-bold font-sans tracking-widest uppercase text-[#231912]/65 hover:border-[#231912]/45 hover:text-[#231912] transition-all duration-300 whitespace-nowrap"
+                >
+                  {translations[locale].cookieEssential}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleCookieChoice("all")}
+                  className="flex-1 sm:flex-none px-6 py-2.5 rounded-full border border-[#d4b986]/70 bg-gradient-to-r from-[#e0c795] via-[#d4b986] to-[#b99a63] text-[#231912] text-[10px] font-bold font-sans tracking-widest uppercase shadow-[0_8px_24px_-10px_rgba(140,120,83,0.9)] hover:from-[#eed9ae] hover:via-[#e0c795] hover:to-[#c9a874] hover:scale-[1.03] transition-all duration-300 whitespace-nowrap"
+                >
+                  {translations[locale].cookieAccept}
+                </button>
+              </div>
+
+            </div>
           </div>
         </div>
       )}
